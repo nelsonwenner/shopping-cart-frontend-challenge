@@ -28,8 +28,8 @@
       "**/__tests__/*.{jsx|js}"
     ],
     "moduleNameMapper": {
-			"@/(.*)": "<rootDir>/src/$1"
-		},
+      "@/(.*)": "<rootDir>/src/$1"
+    },
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ]
