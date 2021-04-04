@@ -1,5 +1,15 @@
 import React from 'react'
 
-const App = () => <h1>Hellow World!!</h1>
+import { ThemeProvider } from 'styled-components'
+
+import GlobalStyles from '@/styles/GlobalStyles'
+import light from '@/styles/themes/light'
+
+const App = () => (
+  <ThemeProvider theme={light}>
+    <GlobalStyles />
+    <h1>Hellow World!!</h1>
+  </ThemeProvider>
+)
 
 export default App
