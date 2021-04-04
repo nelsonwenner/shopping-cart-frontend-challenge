@@ -12,6 +12,23 @@
     "styled-components": "^5.2.3",
     "web-vitals": "^1.0.1"
   },
+  "jest": {
+    "displayName": "end-to-end",
+    "collectCoverage": true,
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": [
+      "<rootDir>/src/setupTests.js"
+    ],
+    "testMatch": [
+      "**/__tests__/*.{jsx|js}"
+    ],
+    "moduleNameMapper": {
+			"@/(.*)": "<rootDir>/src/$1"
+		},
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
+  },
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
@@ -41,12 +58,16 @@
   "devDependencies": {
     "babel-plugin-root-import": "^6.6.0",
     "customize-cra": "^1.0.0",
-    "react-app-rewired": "^2.1.8",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
+    "enzyme-to-json": "^3.6.1",
     "eslint": "^7.23.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.23.1",
     "eslint-plugin-react-hooks": "^4.2.0",
-    "prettier": "^2.2.1"
+    "jest-enzyme": "^7.1.2",
+    "prettier": "^2.2.1",
+    "react-app-rewired": "^2.1.8"
   }
 }
