@@ -12,9 +12,11 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
     "test": "react-scripts test",
+    "lint:fix": "eslint src --fix",
+    "style:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -38,6 +40,7 @@
   "devDependencies": {
     "babel-plugin-root-import": "^6.6.0",
     "customize-cra": "^1.0.0",
+    "react-app-rewired": "^2.1.8",
     "eslint": "^7.23.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
