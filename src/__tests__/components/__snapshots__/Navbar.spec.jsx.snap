@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Navbar> Should render Navbar component without fail and matches the snapshot 1`] = `
+<styled.header
+  as={
+    Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "attrs": Array [],
+      "componentStyle": e {
+        "baseHash": 1948764880,
+        "baseStyle": undefined,
+        "componentId": "sc-hKwCoD",
+        "isStatic": false,
+        "rules": Array [
+          "
+  max-width: 1280px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media only screen and (min-width: 993px) {
+    .container {
+      width: 70%;
+    }
+  }
+
+  @media only screen and (min-width: 601px) {
+    .container {
+      width: 85%;
+    }
+  }
+",
+        ],
+        "staticRulesId": "",
+      },
+      "foldedComponentIds": Array [],
+      "render": [Function],
+      "shouldForwardProp": undefined,
+      "styledComponentId": "sc-hKwCoD",
+      "target": "div",
+      "toString": [Function],
+      "warnTooManyClasses": [Function],
+      "withComponent": [Function],
+    }
+  }
+>
+  <styled.h1>
+    Shopping
+  </styled.h1>
+  <styled.div>
+    <img
+      alt="avatar"
+      src="default.png"
+    />
+    <span>
+      John Doe
+    </span>
+  </styled.div>
+</styled.header>
+`;
